@@ -1,7 +1,42 @@
 body {
-  display: flex; /* Make the body a flex container */
-  justify-content: center; /* Center horizontally */
+  display: flex;
+  flex-direction: column; /* Stack input area and grid vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
+
+.input-container {
+  margin-bottom: 20px; /* Add some space between input area and grid */
+  text-align: center; /* Center the content inside input-container */
+}
+
+label {
+  display: block; /* Put label on its own line */
+  margin-bottom: 5px;
+}
+
+input[type="number"] { /* Style the number input */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60px; /* Adjust width as needed */
+}
+
+button { /* Style the button */
+  padding: 8px 15px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover { /* Hover effect for button */
+  background-color: #45a049;
+}
+
 
 #squares-container {
   display: flex; /* Make the container a flex container */
