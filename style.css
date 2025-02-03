@@ -1,0 +1,25 @@
+body {
+  display: flex; /* Make the body a flex container */
+  justify-content: center; /* Center horizontally */
+}
+
+#squares-container {
+  display: flex; /* Make the container a flex container */
+  flex-direction: column; /* Arrange rows in a column */
+  border: 1px solid black; /* Optional: Add a border to the grid container */
+  width: 480px; /* Adjust as needed for the total width of the grid */
+  height: 480px; /* Adjust as needed for the total height of the grid */
+  align-self: center;
+}
+
+.line-of-squares {
+  display: flex; /* Make each row a flex container */
+  flex: 1; /* Allow rows to take equal height within the container */
+}
+
+.square {
+  flex: 1; /* Allow squares to take equal width within the row */
+  border: 1px solid lightgray; /* Optional: Add borders to squares for visibility */
+  box-sizing: border-box; /* Include border in the square's dimensions */
+  background-color: white; /* Default square color */
+}
